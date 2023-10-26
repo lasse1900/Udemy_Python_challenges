@@ -33,6 +33,22 @@ print("set_my: ", set_my)
 print('-'*20)
 
 # ---------------------
+# Option 1
+# ---------------------
+import string
+
+# s = "The quick brown fox jumps over the lazy dog"
+s = "abcdefghijklmnopqrstuvwxyz"
+s2 = ''
+for i in range(len(s)):
+    if s[i] != ' ':
+        s2 += s[i] 
+
+set_s = set(s2.lower())
+# set_s.remove(" ")
+print(set_s == set(string.ascii_lowercase))
+
+# ---------------------
 # Option 2
 # ---------------------
 import string
