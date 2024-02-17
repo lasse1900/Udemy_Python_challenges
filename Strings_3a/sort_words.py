@@ -11,3 +11,17 @@ for word in words_list:
 new_s.rstrip()
 print(new_s)
 
+# OR
+
+lowered_string = s.lower()
+
+words = lowered_string.split()
+sorted_word_list = ''
+
+for word in words:
+    sorted_word = sorted(word)
+    sorted_word_list = "".join(sorted_word)
+
+    print(f"{sorted_word_list}",end=' ')
+
+
